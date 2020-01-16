@@ -50,13 +50,13 @@ optional arguments:
 
 ### Example
 ```
-python crawler.py posts_full -u cal_foodie -n 100 -o ./output
-python crawler.py posts_full -u cal_foodie -n 10 --fetch_likers --fetch_likes_plays
-python crawler.py posts_full -u cal_foodie -n 10 --fetch_comments
-python crawler.py profile -u cal_foodie -o ./output
-python crawler.py hashtag -t taiwan -o ./output
-python crawler.py hashtag -t taiwan -o ./output --fetch_details
-python crawler.py posts -u cal_foodie -n 100 -o ./output # deprecated
+python crawler.py posts_full -u mcdonalds -n 100 -o ./output
+python crawler.py posts_full -u mcdonalds -n 10 --fetch_likers --fetch_likes_plays
+python crawler.py posts_full -u mcdonalds -n 10 --fetch_comments
+python crawler.py profile -u mcdonalds -o ./output
+python crawler.py hashtag -t mcdonalds -o ./output
+python crawler.py hashtag -t mcdonalds -o ./output --fetch_details
+python crawler.py posts -u mcdonalds -n 100 -o ./output # deprecated
 ```
 1. Choose mode `posts`, you will get url, caption, first photo for each post; choose mode `posts_full`, you will get url, caption, all photos, time, comments, number of likes and views for each posts. Mode `posts_full` will take way longer than mode `posts`. **[`posts` is deprecated. For the recent posts, there is no quick way to get the post caption]**
 2. Return default 100 hashtag posts(mode: hashtag) and all user's posts(mode: posts) if not specifying the number of post `-n`, `--number`.
